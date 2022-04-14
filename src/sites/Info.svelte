@@ -35,7 +35,7 @@
      .textbox-body {
          display: flex;
          flex-direction: column;
-         max-width: 850px;
+         max-width: 600px;
          margin: 15px auto 75px auto;
      }
 
@@ -47,10 +47,11 @@
          border: none;
          border-radius: 40px;
          padding: 10px 50px;
+         box-shadow: 0px 0px 15px lightgrey;
      }
 
      .textbox h1 {
-        font-size: 25px;
+        font-size: 22px;
         text-transform: uppercase;
         font-weight: 1000;
         letter-spacing: 2px;
@@ -60,7 +61,7 @@
 
      .textbox p {
          font-size: 16px;
-         margin-top: 10px;
+         margin-top: 5px;
          color: rgb(83, 83, 83);
      }
 

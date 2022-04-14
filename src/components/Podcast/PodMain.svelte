@@ -29,8 +29,10 @@
         height: 98px;
         object-fit: cover;
         z-index: 2;
-        margin: 10px 0;
         border-radius: 10px;
+        max-width: 600px;
+        margin: 10px auto;
+        box-shadow: 1px 3px 10px grey;
     }
 
     button {
@@ -43,6 +45,8 @@
         font-weight: 600;
         letter-spacing: 1px;
         padding: 10px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
@@ -62,6 +66,7 @@
         margin: 10px 0;
         border-radius: 10px;
         max-width: 850px !important;
+        box-shadow: 1px 3px 10px grey;
     }
 
     button {

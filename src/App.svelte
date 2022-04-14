@@ -1,8 +1,6 @@
 <script>
 	import router from 'page';
 
-	import Navbar from "./components/Navbar.svelte";
-
 	import Calendar from "./sites/Calendar.svelte";
 	import Podcast from "./sites/Podcast.svelte";
 	import Giving from "./sites/Giving.svelte";

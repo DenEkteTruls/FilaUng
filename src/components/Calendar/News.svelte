@@ -47,6 +47,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 1px 3px 15px grey;
   }
 
   h2 {
@@ -73,7 +74,7 @@
     white-space: nowrap;
     margin-bottom: 80px;
   }
-
+  
   .news {
     display: flex;
     flex-direction: column;
@@ -87,6 +88,7 @@
     width: 155px;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 1px 3px 15px grey;
   }
 
   h2 {

@@ -97,6 +97,7 @@
             margin: 150px 5vw 0 5vw;
             position: relative;
             z-index: 1;
+            box-shadow: 1px 3px 10px grey;
         }
     
         .top svg {
@@ -173,6 +174,7 @@
             position: relative;
             z-index: 1;
             margin: 190px 0 0 0;
+            box-shadow: 1px 3px 10px grey;
         }
     
         .top svg {
