@@ -1,2 +1,2 @@
-npm install__
+npm install\
 npm install page
