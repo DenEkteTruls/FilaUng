@@ -4,6 +4,7 @@
 </script>
 
 
+
 <div class="total">
     <input type="checkbox" id="menu_checkbox">
     <label for="menu_checkbox">
@@ -15,6 +16,7 @@
         <h2 style="color: #F49D9A" on:click={() => toPage("discover")}>Discover</h2>
         <h2 style="color: #27AE60" on:click={() => toPage("podcast")}>Podcast</h2>
         <h2 style="color: #F39C12" on:click={() => toPage("gave")}>Gave</h2>
+        <h2 style="color: #2DB4D8" on:click={() => toPage("info")}>Info</h2>
     </div>
 </div>
 
@@ -34,9 +36,11 @@
 
     .container > h2 {
         color: white;
-        font-size: 60px;
+        font-size: 50px;
         z-index: 50;
         margin: 30px 0 0 30px;
+        text-transform: uppercase;
+        font-weight: 800;
         cursor: pointer;
     }
 

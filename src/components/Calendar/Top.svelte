@@ -69,7 +69,6 @@
             background: linear-gradient(90deg, #EE8178, #fd5a7b);
             height: 250px;
             z-index: 0;
-            animation: fadeIn 0.3s;
         }
         
         .dot {

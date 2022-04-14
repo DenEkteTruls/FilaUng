@@ -28,16 +28,15 @@
         background: linear-gradient(90deg, #D5F591, #88D6A5);
         height: 254px;
         z-index: 0;
-        animation: fadeIn 0.3s;
     }
 
 	.top svg {
         position: absolute;
         display: block;
         width: calc(115% + 1.3px);
-        height: 69px;
+        height: 68px;
         transform: rotate(180deg);
-        margin-top: 186px;
+        margin-top: 186px;  
         z-index: 0;
         width: 100%;
     }
@@ -46,25 +45,23 @@
         fill: whitesmoke;
     }
 
-	h2 {
+	h2   {
         position: absolute;
-        color: black;
+        color: rgb(0, 0, 0);
         font-size: 45px;
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 120px;
+        margin-top: 125px;
 		font-weight: 300;
 		letter-spacing: 8px;
         z-index: 21;
-        animation: fadeIn 0.3s;
     }
 
 	img {
 		position: absolute;
 		width: 60px;
-		margin: 50px calc(50% - 30px);
+		margin: 55px calc(50% - 30px);
         z-index: 21;
-        animation: fadeIn 0.3s;
 	}
 </style>

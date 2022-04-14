@@ -2,7 +2,7 @@
     export let color;
     export let current_site;
     
-    let tabs = ["discover", "podcast", "gave", "broadcast"];
+    let tabs = ["discover", "podcast", "gave", "info"];
 
     console.log(current_site);
 
@@ -12,8 +12,6 @@
     }
 
 </script>
-
-
 
         {#if color == "#F49D9A"}
         <div class="container" style="border-top: 2px solid #F49D9A;">
@@ -30,6 +28,8 @@
                         <img style="filter: invert(50%) sepia(9%) saturate(5940%) hue-rotate(98deg) brightness(110%) contrast(60%);" id="{tab}" src="media/{tab}.png" alt="">
                     {:else if color == "#F68802"}
                         <img style="filter: invert(51%) sepia(94%) saturate(1584%) hue-rotate(3deg) brightness(101%) contrast(99%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#2DB4D8"}
+                        <img style="filter: invert(60%) sepia(99%) saturate(468%) hue-rotate(156deg) brightness(89%) contrast(88%);" id="{tab}" src="media/{tab}.png" alt="">
                     {/if}
                     <p style="color: {color};">{tab}</p>
                 {/if}
@@ -52,6 +52,8 @@
                         <img style="filter: invert(50%) sepia(9%) saturate(5940%) hue-rotate(98deg) brightness(110%) contrast(60%);" id="{tab}" src="media/{tab}.png" alt="">
                     {:else if color == "#F68802"}
                         <img style="filter: invert(51%) sepia(94%) saturate(1584%) hue-rotate(3deg) brightness(101%) contrast(99%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#2DB4D8"}
+                        <img style="filter: invert(60%) sepia(99%) saturate(468%) hue-rotate(156deg) brightness(89%) contrast(88%);" id="{tab}" src="media/{tab}.png" alt="">
                     {/if}
                     <p style="color: {color};">{tab}</p>
                 {/if}
@@ -74,6 +76,32 @@
                         <img style="filter: invert(51%) sepia(94%) saturate(1584%) hue-rotate(3deg) brightness(101%) contrast(99%);" id="{tab}" src="media/{tab}.png" alt="">
                     {:else if color == "#33AB5F"}
                         <img style="filter: invert(50%) sepia(9%) saturate(5940%) hue-rotate(98deg) brightness(110%) contrast(60%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#2DB4D8"}
+                        <img style="filter: invert(60%) sepia(99%) saturate(468%) hue-rotate(156deg) brightness(89%) contrast(88%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {/if}
+                    <p style="color: {color};">{tab}</p>
+                {/if}
+            </div>
+            {/each}
+            </div>
+        </div>
+        {:else if color = "#2DB4D8"}
+        <div class="container" style="border-top: 2px solid #2DB4D8;" >
+            <div class="tab-container">
+            {#each tabs as tab}
+            <div class="tab" on:click={() => clicked(tab)}>
+                {#if tab == current_site}
+                    <img id="{tab}" src="media/{tab}.png" alt="">
+                    <p>{tab}</p>
+                {:else}
+                    {#if color == "#F49D9A"}
+                        <img style="filter: invert(58%) sepia(10%) saturate(1173%) hue-rotate(314deg) brightness(109%) contrast(127%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#F68802"}
+                        <img style="filter: invert(51%) sepia(94%) saturate(1584%) hue-rotate(3deg) brightness(101%) contrast(99%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#33AB5F"}
+                        <img style="filter: invert(50%) sepia(9%) saturate(5940%) hue-rotate(98deg) brightness(110%) contrast(60%);" id="{tab}" src="media/{tab}.png" alt="">
+                    {:else if color == "#2DB4D8"}
+                        <img style="filter: invert(60%) sepia(99%) saturate(468%) hue-rotate(156deg) brightness(89%) contrast(88%);" id="{tab}" src="media/{tab}.png" alt="">
                     {/if}
                     <p style="color: {color};">{tab}</p>
                 {/if}
