@@ -18,6 +18,15 @@
 
 	router.start();
 
+	async function fetchJSON() {
+		const response = await fetch("/jsons/data.json");
+		const data = await response.json();
+		return data;
+	}
+
+	fetchJSON().then(data => {
+		localStorage.setItem("data", JSON.stringify(data));
+	});
 </script>
 
 

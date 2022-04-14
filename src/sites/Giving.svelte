@@ -28,18 +28,6 @@
     @import "global.css";
 
 @media only screen and (max-width: 850px) {
-    h2 {
-        position: absolute;
-        color: white;
-        font-size: 50px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 120px;
-		font-weight: 500;
-		letter-spacing: 8px;
-        z-index: 21;
-    }
 
     .top {
         background: linear-gradient(90deg, #F7BE26, #F25622);
@@ -73,14 +61,30 @@
         padding: 2vw;
     }
 
+    .icon-container {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+    }
+
     .icon {
-		position: absolute;
 		width: 60px;
-        margin: -195px calc(50vw - 40px);
-        z-index: 21;
         background: none;
-        filter: invert(100%)
+        filter: invert(100%);
+        z-index: 21;
+        margin-bottom: 160px;
 	}
+
+    h2 {
+        color: white;
+        font-size: 60px;
+        font-weight: 500;
+        letter-spacing: 8px;
+    }
 }
 
 @media only screen and (min-width: 851px) {

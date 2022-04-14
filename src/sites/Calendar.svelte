@@ -4,6 +4,8 @@
     import Logo from "../components/Logo.svelte";
     import Navbar from "../components/Navbar.svelte";
     import Menu from "../components/Menu.svelte";
+
+    export let data;
 </script>
 
 
@@ -11,8 +13,8 @@
     <Menu color="white"/>
     <Logo/>
 </div>
-<Top/>
-<News/>
+<Top {data}/>
+<News {data}/>
 <Navbar current_site="discover" color="#F49D9A"/>
 
 

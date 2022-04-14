@@ -1675,7 +1675,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    function get_each_context$2(ctx, list, i) {
+    function get_each_context$3(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[7] = list[i];
     	return child_ctx;
@@ -1921,7 +1921,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
     	}
 
     	const block = {
@@ -1954,12 +1954,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$2(ctx, each_value, i);
+    					const child_ctx = get_each_context$3(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block$2(child_ctx);
+    						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(div0, null);
     					}
@@ -3239,7 +3239,7 @@ var app = (function () {
     }
 
     // (19:12) {#each tabs as tab}
-    function create_each_block$2(ctx) {
+    function create_each_block$3(ctx) {
     	let div;
     	let t;
     	let mounted;
@@ -3300,7 +3300,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$2.name,
+    		id: create_each_block$3.name,
     		type: "each",
     		source: "(19:12) {#each tabs as tab}",
     		ctx
@@ -3464,15 +3464,15 @@ var app = (function () {
 
     const file$8 = "src/components/Calendar/Top.svelte";
 
-    function get_each_context$1(ctx, list, i) {
+    function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[4] = list[i];
     	child_ctx[6] = i;
     	return child_ctx;
     }
 
-    // (39:12) {#each images as image, i}
-    function create_each_block$1(ctx) {
+    // (34:12) {#each images as image, i}
+    function create_each_block$2(ctx) {
     	let span;
     	let mounted;
     	let dispose;
@@ -3481,7 +3481,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			attr_dev(span, "class", "dot svelte-1ra1q74");
-    			add_location(span, file$8, 39, 16, 1292);
+    			add_location(span, file$8, 34, 16, 974);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3503,9 +3503,9 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$1.name,
+    		id: create_each_block$2.name,
     		type: "each",
-    		source: "(39:12) {#each images as image, i}",
+    		source: "(34:12) {#each images as image, i}",
     		ctx
     	});
 
@@ -3531,7 +3531,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
     	}
 
     	const block = {
@@ -3557,27 +3557,27 @@ var app = (function () {
 
     			attr_dev(path, "d", "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z");
     			attr_dev(path, "class", "shape-fill svelte-1ra1q74");
-    			add_location(path, file$8, 31, 8, 817);
+    			add_location(path, file$8, 26, 8, 499);
     			attr_dev(svg, "data-name", "Layer 1");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 1200 120");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			attr_dev(svg, "class", "svelte-1ra1q74");
-    			add_location(svg, file$8, 30, 4, 698);
+    			add_location(svg, file$8, 25, 4, 380);
     			attr_dev(h3, "class", "svelte-1ra1q74");
-    			add_location(h3, file$8, 34, 8, 1098);
+    			add_location(h3, file$8, 29, 8, 780);
     			attr_dev(h2, "class", "svelte-1ra1q74");
-    			add_location(h2, file$8, 35, 8, 1124);
+    			add_location(h2, file$8, 30, 8, 806);
     			if (!src_url_equal(img.src, img_src_value = /*images*/ ctx[1][/*idx*/ ctx[0]])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-1ra1q74");
-    			add_location(img, file$8, 36, 8, 1174);
+    			add_location(img, file$8, 31, 8, 856);
     			attr_dev(div0, "class", "dotList svelte-1ra1q74");
-    			add_location(div0, file$8, 37, 8, 1215);
+    			add_location(div0, file$8, 32, 8, 897);
     			attr_dev(div1, "class", "top-container svelte-1ra1q74");
-    			add_location(div1, file$8, 33, 4, 1062);
+    			add_location(div1, file$8, 28, 4, 744);
     			attr_dev(div2, "class", "top svelte-1ra1q74");
-    			add_location(div2, file$8, 29, 0, 676);
+    			add_location(div2, file$8, 24, 0, 358);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3611,12 +3611,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$1(ctx, each_value, i);
+    					const child_ctx = get_each_context$2(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block$1(child_ctx);
+    						each_blocks[i] = create_each_block$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(div0, null);
     					}
@@ -3651,14 +3651,7 @@ var app = (function () {
     function instance$9($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Top', slots, []);
-
-    	let images = [
-    		"https://lensire.com/275919041_817167405884328_2531714923431134668_n.jpeg",
-    		"https://i.pinimg.com/originals/6d/51/d3/6d51d3f9f63b5de77b2e8190c95c2646.jpg",
-    		"https://i.swncdn.com/media/900w/via/7711-congregation-hands-up-in-worship-gettyimages-.jpg",
-    		"https://i.pinimg.com/736x/85/54/dc/8554dc76e548a38e2e40d95a046bb134.jpg"
-    	];
-
+    	let images = JSON.parse(localStorage.getItem("data")).tops;
     	let idx = 0;
 
     	function slideImage() {
@@ -3715,21 +3708,21 @@ var app = (function () {
 
     const file$7 = "src/components/Calendar/News.svelte";
 
-    function get_each_context(ctx, list, i) {
+    function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[2] = list[i];
-    	child_ctx[4] = i;
+    	child_ctx[1] = list[i];
+    	child_ctx[3] = i;
     	return child_ctx;
     }
 
-    // (18:4) {#each images as image, i}
-    function create_each_block(ctx) {
+    // (10:4) {#each images as image, i}
+    function create_each_block$1(ctx) {
     	let div;
     	let img;
     	let img_src_value;
     	let t0;
     	let h3;
-    	let t1_value = /*titles*/ ctx[1][/*i*/ ctx[4]] + "";
+    	let t1_value = /*image*/ ctx[1].title + "";
     	let t1;
     	let t2;
 
@@ -3742,13 +3735,13 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(img, "class", "image svelte-5b42hg");
-    			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[2])) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[1].image_src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
-    			add_location(img, file$7, 19, 8, 7565);
+    			add_location(img, file$7, 11, 8, 218);
     			attr_dev(h3, "class", "svelte-5b42hg");
-    			add_location(h3, file$7, 20, 8, 7615);
+    			add_location(h3, file$7, 12, 8, 278);
     			attr_dev(div, "class", "news svelte-5b42hg");
-    			add_location(div, file$7, 18, 6, 7538);
+    			add_location(div, file$7, 10, 6, 191);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3766,9 +3759,9 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block.name,
+    		id: create_each_block$1.name,
     		type: "each",
-    		source: "(18:4) {#each images as image, i}",
+    		source: "(10:4) {#each images as image, i}",
     		ctx
     	});
 
@@ -3785,7 +3778,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
     	}
 
     	const block = {
@@ -3801,11 +3794,11 @@ var app = (function () {
     			}
 
     			attr_dev(h2, "class", "svelte-5b42hg");
-    			add_location(h2, file$7, 15, 2, 7455);
+    			add_location(h2, file$7, 7, 2, 108);
     			attr_dev(div0, "class", "container svelte-5b42hg");
-    			add_location(div0, file$7, 16, 2, 7477);
+    			add_location(div0, file$7, 8, 2, 130);
     			attr_dev(div1, "class", "total svelte-5b42hg");
-    			add_location(div1, file$7, 14, 0, 7433);
+    			add_location(div1, file$7, 6, 0, 86);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3821,18 +3814,18 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*titles, images*/ 3) {
+    			if (dirty & /*images*/ 1) {
     				each_value = /*images*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
+    					const child_ctx = get_each_context$1(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(div0, null);
     					}
@@ -3867,41 +3860,24 @@ var app = (function () {
     function instance$8($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('News', slots, []);
-
-    	let images = [
-    		"https://lensire.com/275919041_817167405884328_2531714923431134668_n.jpeg",
-    		"https://i.pinimg.com/originals/6d/51/d3/6d51d3f9f63b5de77b2e8190c95c2646.jpg",
-    		"https://i.swncdn.com/media/900w/via/7711-congregation-hands-up-in-worship-gettyimages-.jpg",
-    		"data:image/jpeg;base64,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",
-    		"https://i.pinimg.com/736x/85/54/dc/8554dc76e548a38e2e40d95a046bb134.jpg"
-    	];
-
-    	let titles = [
-    		"Hett med Bordtennis",
-    		"Fleo Market",
-    		"Andreas taler",
-    		"Musikk samling",
-    		"Hangout"
-    	];
-
+    	let images = JSON.parse(localStorage.getItem("data")).events;
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<News> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ images, titles });
+    	$$self.$capture_state = () => ({ images });
 
     	$$self.$inject_state = $$props => {
     		if ('images' in $$props) $$invalidate(0, images = $$props.images);
-    		if ('titles' in $$props) $$invalidate(1, titles = $$props.titles);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [images, titles];
+    	return [images];
     }
 
     class News extends SvelteComponentDev {
@@ -4227,8 +4203,16 @@ var app = (function () {
     		});
 
     	logo = new Logo({ $$inline: true });
-    	top = new Top({ $$inline: true });
-    	news = new News({ $$inline: true });
+
+    	top = new Top({
+    			props: { data: /*data*/ ctx[0] },
+    			$$inline: true
+    		});
+
+    	news = new News({
+    			props: { data: /*data*/ ctx[0] },
+    			$$inline: true
+    		});
 
     	navbar = new Navbar({
     			props: {
@@ -4251,7 +4235,7 @@ var app = (function () {
     			t3 = space();
     			create_component(navbar.$$.fragment);
     			attr_dev(div, "class", "container svelte-i2jira");
-    			add_location(div, file$4, 9, 0, 291);
+    			add_location(div, file$4, 11, 0, 313);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4269,7 +4253,14 @@ var app = (function () {
     			mount_component(navbar, target, anchor);
     			current = true;
     		},
-    		p: noop,
+    		p: function update(ctx, [dirty]) {
+    			const top_changes = {};
+    			if (dirty & /*data*/ 1) top_changes.data = /*data*/ ctx[0];
+    			top.$set(top_changes);
+    			const news_changes = {};
+    			if (dirty & /*data*/ 1) news_changes.data = /*data*/ ctx[0];
+    			news.$set(news_changes);
+    		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(menu.$$.fragment, local);
@@ -4314,20 +4305,34 @@ var app = (function () {
     function instance$5($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Calendar', slots, []);
-    	const writable_props = [];
+    	let { data } = $$props;
+    	const writable_props = ['data'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Calendar> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ Top, News, Logo, Navbar, Menu });
-    	return [];
+    	$$self.$$set = $$props => {
+    		if ('data' in $$props) $$invalidate(0, data = $$props.data);
+    	};
+
+    	$$self.$capture_state = () => ({ Top, News, Logo, Navbar, Menu, data });
+
+    	$$self.$inject_state = $$props => {
+    		if ('data' in $$props) $$invalidate(0, data = $$props.data);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [data];
     }
 
     class Calendar extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { data: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -4335,6 +4340,21 @@ var app = (function () {
     			options,
     			id: create_fragment$5.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*data*/ ctx[0] === undefined && !('data' in props)) {
+    			console.warn("<Calendar> was created without expected prop 'data'");
+    		}
+    	}
+
+    	get data() {
+    		throw new Error("<Calendar>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set data(value) {
+    		throw new Error("<Calendar>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
@@ -4658,30 +4678,30 @@ var app = (function () {
     			img1 = element("img");
     			t6 = space();
     			create_component(navbar.$$.fragment);
-    			attr_dev(h2, "class", "svelte-226nxc");
+    			attr_dev(h2, "class", "svelte-wocgz9");
     			add_location(h2, file$1, 11, 4, 239);
-    			attr_dev(img0, "class", "icon svelte-226nxc");
+    			attr_dev(img0, "class", "icon svelte-wocgz9");
     			if (!src_url_equal(img0.src, img0_src_value = "media/gave.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "");
     			add_location(img0, file$1, 12, 4, 257);
-    			attr_dev(div0, "class", "icon-container svelte-226nxc");
+    			attr_dev(div0, "class", "icon-container svelte-wocgz9");
     			add_location(div0, file$1, 10, 0, 206);
     			attr_dev(path, "d", "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z");
-    			attr_dev(path, "class", "shape-fill svelte-226nxc");
+    			attr_dev(path, "class", "shape-fill svelte-wocgz9");
     			add_location(path, file$1, 16, 8, 453);
     			attr_dev(svg, "data-name", "Layer 1");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 1200 120");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			attr_dev(svg, "class", "svelte-226nxc");
+    			attr_dev(svg, "class", "svelte-wocgz9");
     			add_location(svg, file$1, 15, 4, 334);
-    			attr_dev(div1, "class", "top svelte-226nxc");
+    			attr_dev(div1, "class", "top svelte-wocgz9");
     			add_location(div1, file$1, 14, 0, 312);
     			if (!src_url_equal(img1.src, img1_src_value = "media/vipps.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "");
-    			attr_dev(img1, "class", "svelte-226nxc");
+    			attr_dev(img1, "class", "svelte-wocgz9");
     			add_location(img1, file$1, 20, 4, 726);
-    			attr_dev(div2, "class", "container svelte-226nxc");
+    			attr_dev(div2, "class", "container svelte-wocgz9");
     			add_location(div2, file$1, 19, 0, 698);
     		},
     		l: function claim(nodes) {
@@ -4777,6 +4797,66 @@ var app = (function () {
     /* src/sites/Info.svelte generated by Svelte v3.47.0 */
     const file = "src/sites/Info.svelte";
 
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[1] = list[i];
+    	return child_ctx;
+    }
+
+    // (21:4) {#each info as textbox}
+    function create_each_block(ctx) {
+    	let div;
+    	let h1;
+    	let t0_value = /*textbox*/ ctx[1].header + "";
+    	let t0;
+    	let t1;
+    	let p;
+    	let t2_value = /*textbox*/ ctx[1].article + "";
+    	let t2;
+    	let t3;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			h1 = element("h1");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			p = element("p");
+    			t2 = text(t2_value);
+    			t3 = space();
+    			attr_dev(h1, "class", "svelte-kpsbg4");
+    			add_location(h1, file, 22, 12, 807);
+    			attr_dev(p, "class", "svelte-kpsbg4");
+    			add_location(p, file, 23, 12, 845);
+    			attr_dev(div, "class", "textbox svelte-kpsbg4");
+    			add_location(div, file, 21, 8, 773);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, h1);
+    			append_dev(h1, t0);
+    			append_dev(div, t1);
+    			append_dev(div, p);
+    			append_dev(p, t2);
+    			append_dev(div, t3);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(21:4) {#each info as textbox}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
     function create_fragment$1(ctx) {
     	let logo;
     	let t0;
@@ -4787,10 +4867,12 @@ var app = (function () {
     	let t2;
     	let h2;
     	let t4;
-    	let div;
+    	let div0;
     	let svg;
     	let path;
     	let t5;
+    	let div1;
+    	let t6;
     	let navbar;
     	let current;
     	logo = new Logo({ $$inline: true });
@@ -4799,6 +4881,14 @@ var app = (function () {
     			props: { color: "white" },
     			$$inline: true
     		});
+
+    	let each_value = /*info*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
 
     	navbar = new Navbar({
     			props: { current_site: "info", color: "#2DB4D8" },
@@ -4816,28 +4906,37 @@ var app = (function () {
     			h2 = element("h2");
     			h2.textContent = "om filaung";
     			t4 = space();
-    			div = element("div");
+    			div0 = element("div");
     			svg = svg_element("svg");
     			path = svg_element("path");
     			t5 = space();
+    			div1 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t6 = space();
     			create_component(navbar.$$.fragment);
     			if (!src_url_equal(img.src, img_src_value = "media/info.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
-    			attr_dev(img, "class", "svelte-ynuo79");
-    			add_location(img, file, 10, 0, 206);
-    			attr_dev(h2, "class", "svelte-ynuo79");
-    			add_location(h2, file, 11, 0, 241);
+    			attr_dev(img, "class", "svelte-kpsbg4");
+    			add_location(img, file, 12, 0, 269);
+    			attr_dev(h2, "class", "svelte-kpsbg4");
+    			add_location(h2, file, 13, 0, 304);
     			attr_dev(path, "d", "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z");
-    			attr_dev(path, "class", "shape-fill svelte-ynuo79");
-    			add_location(path, file, 14, 8, 402);
+    			attr_dev(path, "class", "shape-fill svelte-kpsbg4");
+    			add_location(path, file, 16, 8, 465);
     			attr_dev(svg, "data-name", "Layer 1");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 1200 120");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			attr_dev(svg, "class", "svelte-ynuo79");
-    			add_location(svg, file, 13, 4, 283);
-    			attr_dev(div, "class", "top svelte-ynuo79");
-    			add_location(div, file, 12, 0, 261);
+    			attr_dev(svg, "class", "svelte-kpsbg4");
+    			add_location(svg, file, 15, 4, 346);
+    			attr_dev(div0, "class", "top svelte-kpsbg4");
+    			add_location(div0, file, 14, 0, 324);
+    			attr_dev(div1, "class", "textbox-body svelte-kpsbg4");
+    			add_location(div1, file, 19, 0, 710);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4851,14 +4950,45 @@ var app = (function () {
     			insert_dev(target, t2, anchor);
     			insert_dev(target, h2, anchor);
     			insert_dev(target, t4, anchor);
-    			insert_dev(target, div, anchor);
-    			append_dev(div, svg);
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, svg);
     			append_dev(svg, path);
     			insert_dev(target, t5, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div1, null);
+    			}
+
+    			insert_dev(target, t6, anchor);
     			mount_component(navbar, target, anchor);
     			current = true;
     		},
-    		p: noop,
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*info*/ 1) {
+    				each_value = /*info*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(div1, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(logo.$$.fragment, local);
@@ -4881,8 +5011,11 @@ var app = (function () {
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(div0);
     			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div1);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t6);
     			destroy_component(navbar, detaching);
     		}
     	};
@@ -4901,14 +5034,24 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Info', slots, []);
+    	let info = JSON.parse(localStorage.getItem("data")).info;
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Info> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ Logo, Menu, Navbar });
-    	return [];
+    	$$self.$capture_state = () => ({ Logo, Menu, Navbar, info });
+
+    	$$self.$inject_state = $$props => {
+    		if ('info' in $$props) $$invalidate(0, info = $$props.info);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [info];
     }
 
     class Info extends SvelteComponentDev {
@@ -5006,6 +5149,12 @@ var app = (function () {
     	return block;
     }
 
+    async function fetchJSON() {
+    	const response = await fetch("/jsons/data.json");
+    	const data = await response.json();
+    	return data;
+    }
+
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('App', slots, []);
@@ -5016,6 +5165,11 @@ var app = (function () {
     	page('/gave', () => $$invalidate(0, current_page = Giving));
     	page('/info', () => $$invalidate(0, current_page = Info));
     	page.start();
+
+    	fetchJSON().then(data => {
+    		localStorage.setItem("data", JSON.stringify(data));
+    	});
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -5029,7 +5183,8 @@ var app = (function () {
     		Podcast,
     		Giving,
     		Info,
-    		current_page
+    		current_page,
+    		fetchJSON
     	});
 
     	$$self.$inject_state = $$props => {

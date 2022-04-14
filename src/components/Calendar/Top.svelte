@@ -1,10 +1,5 @@
 <script>
-    let images = [
-        "https://lensire.com/275919041_817167405884328_2531714923431134668_n.jpeg",
-        "https://i.pinimg.com/originals/6d/51/d3/6d51d3f9f63b5de77b2e8190c95c2646.jpg",
-        "https://i.swncdn.com/media/900w/via/7711-congregation-hands-up-in-worship-gettyimages-.jpg",
-        "https://i.pinimg.com/736x/85/54/dc/8554dc76e548a38e2e40d95a046bb134.jpg"
-    ];
+    let images = JSON.parse(localStorage.getItem("data")).tops;
 
     let idx = 0;
 
