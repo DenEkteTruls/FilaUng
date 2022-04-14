@@ -31,13 +31,15 @@
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
-    <h3>DISCOVER</h3>
-    <h2>Finn ut hva som skjer på FilaUng</h2>
-    <img src="{images[idx]}" alt="">
-    <div class="dotList">
-        {#each images as image, i}
-            <span class="dot" on:click={slideTo(i)}></span>
-        {/each}
+    <div class="top-container">
+        <h3>DISCOVER</h3>
+        <h2>Finn ut hva som skjer på FilaUng</h2>
+        <img src="{images[idx]}" alt="">
+        <div class="dotList">
+            {#each images as image, i}
+                <span class="dot" on:click={slideTo(i)}></span>
+            {/each}
+        </div>
     </div>
 </div>
 
@@ -57,7 +59,7 @@
     
         h2 {
             position: absolute;
-            margin: 126px 6vw;
+            margin: 126px calc(6vw + 2px);
             font-size: 16px;
             color: rgb(251, 251, 251);
             font-weight: 500;
@@ -117,19 +119,20 @@
             fill: whitesmoke;
         }
     }
-    
-    @media only screen {
+
+    @media only screen and (min-width: 851px) {
         h3 {
             position: absolute;
-            margin: 85px 6vw;
+            margin: 103px 1vw;
             color: white;
-            font-size: 40px;
+            font-size: 50px;
+            letter-spacing: 0.2px;
         }
     
         h2 {
             position: absolute;
-            margin: 126px 6vw;
-            font-size: 16px;
+            margin: 155px 1vw;
+            font-size: 18px;
             color: rgb(251, 251, 251);
             font-weight: 500;
             letter-spacing: 0.2px;
@@ -139,6 +142,11 @@
             background: linear-gradient(90deg, #EE8178, #fd5a7b);
             height: 250px;
             z-index: 0;
+        }
+
+        .top-container {
+            margin: 0 auto;
+            max-width: 850px;
         }
         
         .dot {
@@ -164,12 +172,12 @@
         img {
             border: none;
             border-radius: 15px;
-            width: 90vw;
-            height: 350px;
+            height: 500px;
+            width: 850px;
             object-fit: cover;
-            margin: 150px 5vw 0 5vw;
             position: relative;
             z-index: 1;
+            margin: 190px 0 0 0;
         }
     
         .top svg {

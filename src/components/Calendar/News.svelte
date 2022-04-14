@@ -12,19 +12,65 @@
 
 
 
-<h2>New Events</h2>
-<div class="container">
-  {#each images as image, i}
-    <div class="news">
-      <img class="image" src="{image}" alt=""/>
-      <h3>{titles[i]}</h3>
-    </div>
-  {/each}
+<div class="total">
+  <h2>New Events</h2>
+  <div class="container">
+    {#each images as image, i}
+      <div class="news">
+        <img class="image" src="{image}" alt=""/>
+        <h3>{titles[i]}</h3>
+      </div>
+    {/each}
+  </div>
 </div>
 
 
 
 <style>
+
+@media only screen {
+  .total {
+    margin: 0 auto;
+    max-width: 850px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 15px 0vw;
+    margin-bottom: 100px;
+    overflow-y: visible;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 29.8%;
+    margin: 15px;
+  }
+
+  .image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h2 {
+    margin: 520px 0 -10px 1.5vw;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+
+  h3 {
+    font-size: 15px;
+    margin: 5px 0 0 3px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   .container {
     display: flex;
     flex-wrap: nowrap;
@@ -63,4 +109,5 @@
     font-size: 15px;
     margin: 5px 0 0 3px;
   }
+}
 </style>

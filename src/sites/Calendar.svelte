@@ -7,9 +7,20 @@
 </script>
 
 
-
-<Menu color="white"/>
-<Logo/>
+<div class="container">
+    <Menu color="white"/>
+    <Logo/>
+</div>
 <Top/>
 <News/>
 <Navbar current_site="discover" color="#F49D9A"/>
+
+
+
+<style>
+@media only screen and (min-width: 851px) {
+    .container {
+        max-width: 850px;
+    }
+}
+</style>

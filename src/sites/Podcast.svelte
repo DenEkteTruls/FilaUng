@@ -33,10 +33,9 @@
 	.top svg {
         position: absolute;
         display: block;
-        width: calc(115% + 1.3px);
         height: 68px;
         transform: rotate(180deg);
-        margin-top: 186px;  
+        margin-top: 187px;  
         z-index: 0;
         width: 100%;
     }

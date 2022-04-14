@@ -15,6 +15,7 @@
 
 
 <style>
+@media only screen and (max-width: 850px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -43,4 +44,37 @@
         letter-spacing: 1px;
         padding: 10px;
     }
+}
+
+@media only screen and (min-width: 851px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        max-width: 850px;
+    }
+
+    .radio {
+        width: 90vw;
+        height: 160px;
+        object-fit: cover;
+        z-index: 2;
+        margin: 10px 0;
+        border-radius: 10px;
+        max-width: 850px !important;
+    }
+
+    button {
+        border: none;
+        border-radius: 15px;
+        background-color: black;
+        width: 90vw;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 12px;
+        max-width: 850px !important;
+    }
+}
 </style>
