@@ -9,7 +9,8 @@
     .container {
         position: absolute;
         right: 5vw;
-        top: 5vw;
+        top: 22px;
+        z-index: 21;
     }
 
     img {

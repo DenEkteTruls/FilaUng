@@ -17,6 +17,7 @@
 
         {#if color == "#F49D9A"}
         <div class="container" style="border-top: 2px solid #F49D9A;">
+            <div class="tab-container">
             {#each tabs as tab}
             <div class="tab" on:click={() => clicked(tab)}>
                 {#if tab == current_site}
@@ -34,9 +35,11 @@
                 {/if}
             </div>
             {/each}
+            </div>
         </div>
         {:else if color == "#33AB5F"}
         <div class="container" style="border-top: 2px solid #33AB5F;" >
+            <div class="tab-container">
             {#each tabs as tab}
             <div class="tab" on:click={() => clicked(tab)}>
                 {#if tab == current_site}
@@ -54,9 +57,11 @@
                 {/if}
             </div>
             {/each}
+            </div>
         </div>
         {:else if color == "#F68802"}
         <div class="container" style="border-top: 2px solid #F68802;" >
+            <div class="tab-container">
             {#each tabs as tab}
             <div class="tab" on:click={() => clicked(tab)}>
                 {#if tab == current_site}
@@ -74,12 +79,14 @@
                 {/if}
             </div>
             {/each}
+            </div>
         </div>
         {/if}
 
 
 
 <style>
+@media only screen and (max-width: 850px) {
     .container {
       position: fixed;
       bottom: 0;
@@ -112,5 +119,51 @@
         font-weight: 600;
         letter-spacing: -1px;
     }
+}
 
+@media only screen {
+    .container {
+        position: fixed;
+        bottom: 0;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        background: white;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .tab-container {
+        position: fixed;
+        bottom: 0;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 10;
+        max-width: 850px;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    img {
+        width: 38px;
+        height: auto;
+        margin: 3px 0 0 0;
+    }
+
+    p {
+        text-transform: capitalize;
+        margin: 3px 0;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+}
 </style>

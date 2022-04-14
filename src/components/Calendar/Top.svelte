@@ -44,71 +44,148 @@
 
 
 <style>
-    h3 {
-        position: absolute;
-        margin: 85px 6vw;
-        color: white;
-        font-size: 40px;
-    }
+    @import "global.css";
 
-    h2 {
-        position: absolute;
-        margin: 126px 6vw;
-        font-size: 16px;
-        color: rgb(251, 251, 251);
-        font-weight: 500;
-        letter-spacing: 0.2px;
-    }
-
-    .top {
-        background: linear-gradient(90deg, #EE8178, #D76C81);
-        height: 250px;
-        z-index: 0;
+    @media only screen and (max-width: 850px) {
+        h3 {
+            position: absolute;
+            margin: 85px 6vw;
+            color: white;
+            font-size: 40px;
+            z-index: 21;
+        }
+    
+        h2 {
+            position: absolute;
+            margin: 126px 6vw;
+            font-size: 16px;
+            color: rgb(251, 251, 251);
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            z-index: 21;
+        }
+    
+        .top {
+            background: linear-gradient(90deg, #EE8178, #fd5a7b);
+            height: 250px;
+            z-index: 0;
+            animation: fadeIn 0.3s;
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 2px;
+            padding: 0;
+            border: 1px solid #F49D9A;
+            border-radius: 50%;
+            transition: background-color 0.15s;
+        }
+    
+        .dot:hover {
+            background-color: #F49D9A;
+        }
+    
+        .dotList {
+            display: flex;
+            justify-content: center;
+        }
+    
+        img {
+            border: none;
+            border-radius: 15px;
+            width: 90vw;
+            height: 350px;
+            object-fit: cover;
+            margin: 150px 5vw 0 5vw;
+            position: relative;
+            z-index: 1;
+        }
+    
+        .top svg {
+            position: absolute;
+            display: block;
+            width: calc(115% + 1.3px);
+            height: 69px;
+            transform: rotate(180deg);
+            margin-top: 185px;
+            z-index: 0;
+            width: 100%;
+        }
+    
+        .top .shape-fill {
+            fill: whitesmoke;
+        }
     }
     
-    .dot {
-        cursor: pointer;
-        height: 13px;
-        width: 13px;
-        margin: 2px;
-        padding: 0;
-        border: 1px solid #F49D9A;
-        border-radius: 50%;
-        transition: background-color 0.15s;
-    }
-
-    .dot:hover {
-        background-color: #F49D9A;
-    }
-
-    .dotList {
-        display: flex;
-        justify-content: center;
-    }
-
-    img {
-        border: none;
-        border-radius: 15px;
-        width: 90vw;
-        height: 350px;
-        object-fit: cover;
-        margin: 150px 5vw 0 5vw;
-        position: relative;
-        z-index: 1;
-    }
-
-    .top svg {
-        position: absolute;
-        display: block;
-        width: calc(115% + 1.3px);
-        height: 69px;
-        transform: rotate(180deg);
-        margin-top: 185px;
-        z-index: 0;
-        width: 100%;
-    }
-
-    .top .shape-fill {
-        fill: whitesmoke;
+    @media only screen {
+        h3 {
+            position: absolute;
+            margin: 85px 6vw;
+            color: white;
+            font-size: 40px;
+        }
+    
+        h2 {
+            position: absolute;
+            margin: 126px 6vw;
+            font-size: 16px;
+            color: rgb(251, 251, 251);
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+    
+        .top {
+            background: linear-gradient(90deg, #EE8178, #fd5a7b);
+            height: 250px;
+            z-index: 0;
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 2px;
+            padding: 0;
+            border: 1px solid #F49D9A;
+            border-radius: 50%;
+            transition: background-color 0.15s;
+        }
+    
+        .dot:hover {
+            background-color: #F49D9A;
+        }
+    
+        .dotList {
+            display: flex;
+            justify-content: center;
+        }
+    
+        img {
+            border: none;
+            border-radius: 15px;
+            width: 90vw;
+            height: 350px;
+            object-fit: cover;
+            margin: 150px 5vw 0 5vw;
+            position: relative;
+            z-index: 1;
+        }
+    
+        .top svg {
+            position: absolute;
+            display: block;
+            width: calc(115% + 1.3px);
+            height: 69px;
+            transform: rotate(180deg);
+            margin-top: 185px;
+            z-index: 0;
+            width: 100%;
+        }
+    
+        .top .shape-fill {
+            fill: whitesmoke;
+        }
     }
 </style>

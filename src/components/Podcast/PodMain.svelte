@@ -20,6 +20,7 @@
         flex-direction: column;
         margin: 0 5vw;
         margin-top: 30px;
+        margin-bottom: 100px;
     }
 
     .radio {

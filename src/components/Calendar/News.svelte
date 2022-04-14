@@ -25,7 +25,6 @@
 
 
 <style>
-
   .container {
     display: flex;
     flex-wrap: nowrap;
@@ -64,5 +63,4 @@
     font-size: 15px;
     margin: 5px 0 0 3px;
   }
-
 </style>

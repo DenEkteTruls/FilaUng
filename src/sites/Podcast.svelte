@@ -22,10 +22,13 @@
 
 
 <style>
+    @import "global.css";
+
 	.top {
         background: linear-gradient(90deg, #D5F591, #88D6A5);
         height: 254px;
         z-index: 0;
+        animation: fadeIn 0.3s;
     }
 
 	.top svg {
@@ -53,12 +56,15 @@
         margin-top: 120px;
 		font-weight: 300;
 		letter-spacing: 8px;
+        z-index: 21;
+        animation: fadeIn 0.3s;
     }
 
 	img {
 		position: absolute;
 		width: 60px;
 		margin: 50px calc(50% - 30px);
+        z-index: 21;
+        animation: fadeIn 0.3s;
 	}
-
 </style>

@@ -18,10 +18,13 @@
 
 
 <style>
+    @import "global.css";
+
     .top {
         background: linear-gradient(90deg, #F7BE26, #F25622);
         height: 254px;
         z-index: 0;
+        animation: fadeIn 0.3s;
     }
 
 	.top svg {

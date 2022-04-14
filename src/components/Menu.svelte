@@ -21,7 +21,6 @@
 
 
 <style>
-
     #menu_checkbox {
         display: none;
     }
@@ -30,7 +29,7 @@
         display: none;
         position: absolute;
         margin: 130px auto 0 auto;
-        z-index: 21;
+        z-index: 40;
     }
 
     .container > h2 {
@@ -47,8 +46,8 @@
         width: 60px;
         height: 60px;
         cursor: pointer;
-        z-index: 20;
-        margin-left: 3vw;
+        z-index: 30;
+        margin-left: 4vw;
         margin-top: 22px;
     }
 
