@@ -18,7 +18,7 @@
 <div class="slider">
   <div class="slides">
     {#each images as image, i}
-      <img id="{i}" src={image} alt=""}/>
+      <img id="{i}" src={image} alt=""/>
     {/each}
   </div>
 </div>
