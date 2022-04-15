@@ -22,8 +22,6 @@
 
 
 <style>
-    @import "global.css";
-
 	.top {
         background: linear-gradient(90deg, #D5F591, #88D6A5);
         height: 254px;

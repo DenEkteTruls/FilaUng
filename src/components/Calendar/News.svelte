@@ -67,12 +67,17 @@
   .container {
     display: flex;
     flex-wrap: nowrap;
-    padding: 15px 0 15px 5vw;
+    padding: 0 0 15px 3vw;
     height: 170px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     margin-bottom: 80px;
+  }
+
+  .container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
   
   .news {
@@ -92,7 +97,7 @@
   }
 
   h2 {
-    margin: 320px 0 0 5vw;
+    margin: 320px 0 0 8vw;
     margin-top: 320px;
     font-size: 25px;
     font-weight: 600;

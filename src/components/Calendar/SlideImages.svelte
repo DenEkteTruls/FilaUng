@@ -1,5 +1,16 @@
 <script>
   export let images;
+
+  let idx = 0;
+
+  setInterval(() => {
+    if(idx + 1 >= images.length) {
+      idx = 0;
+    } else {
+      idx++;
+    }
+    window.location.assign("#"+idx);
+  }, 5000);
 </script>
 
 
@@ -7,7 +18,7 @@
 <div class="slider">
   <div class="slides">
     {#each images as image, i}
-      <img id="{i}" src={image} alt="">
+      <img id="{i}" src={image} alt=""}/>
     {/each}
   </div>
 </div>
@@ -27,11 +38,8 @@
     scroll-behavior: smooth;
     width: 100vw;
     -webkit-overflow-scrolling: touch;
-    /*
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-    */
   }
+
   .slides::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -57,7 +65,7 @@
 
   @media only screen and (max-width: 850px) {
     .slider {
-      width: 100vw;
+      width: 95vw;
       margin-left: 5vw;
     }
 

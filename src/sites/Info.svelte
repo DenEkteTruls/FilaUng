@@ -30,7 +30,6 @@
 
 
 <style>
-     @import "global.css";
 
      .textbox-body {
          display: flex;
@@ -68,7 +67,7 @@
      h2   {
         position: absolute;
         color: white;
-        font-size: 35px;
+        font-size: 40px;
         display: flex;
         justify-content: center;
         width: 100%;

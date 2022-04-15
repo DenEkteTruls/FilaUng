@@ -25,8 +25,6 @@
 
 
 <style>
-    @import "global.css";
-
 @media only screen and (max-width: 850px) {
 
     .top {
@@ -68,7 +66,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 65px;
+        margin-top: 82px;
     }
 
     .icon {
@@ -81,9 +79,10 @@
 
     h2 {
         color: white;
-        font-size: 60px;
-        font-weight: 500;
-        letter-spacing: 8px;
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
 }
 
