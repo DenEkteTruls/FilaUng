@@ -1,6 +1,7 @@
 <script>
-    let images = JSON.parse(localStorage.getItem("data")).tops;
+    import SlideImages from "../Calendar/SlideImages.svelte";
 
+    let images = JSON.parse(localStorage.getItem("data")).tops;
     let idx = 0;
 
     function slideImage()
@@ -15,11 +16,8 @@
 
     slideImage();
 
-    
     function slideTo(slide) { idx = slide; }
-
 </script>
-
 
 
 <div class="top">
@@ -29,12 +27,7 @@
     <div class="top-container">
         <h3>DISCOVER</h3>
         <h2>Finn ut hva som skjer på FilaUng</h2>
-        <img src="{images[idx]}" alt="">
-        <div class="dotList">
-            {#each images as image, i}
-                <span class="dot" on:click={slideTo(i)}></span>
-            {/each}
-        </div>
+        <SlideImages {images}/>
     </div>
 </div>
 
@@ -66,38 +59,6 @@
             background: linear-gradient(90deg, #EE8178, #fd5a7b);
             height: 250px;
             z-index: 0;
-        }
-        
-        .dot {
-            cursor: pointer;
-            height: 13px;
-            width: 13px;
-            margin: 2px;
-            padding: 0;
-            border: 1px solid #F49D9A;
-            border-radius: 50%;
-            transition: background-color 0.15s;
-        }
-    
-        .dot:hover {
-            background-color: #F49D9A;
-        }
-    
-        .dotList {
-            display: flex;
-            justify-content: center;
-        }
-    
-        img {
-            border: none;
-            border-radius: 15px;
-            width: 90vw;
-            height: 350px;
-            object-fit: cover;
-            margin: 150px 5vw 0 5vw;
-            position: relative;
-            z-index: 1;
-            box-shadow: 1px 3px 10px grey;
         }
     
         .top svg {
@@ -143,38 +104,6 @@
         .top-container {
             margin: 0 auto;
             max-width: 850px;
-        }
-        
-        .dot {
-            cursor: pointer;
-            height: 13px;
-            width: 13px;
-            margin: 2px;
-            padding: 0;
-            border: 1px solid #F49D9A;
-            border-radius: 50%;
-            transition: background-color 0.15s;
-        }
-    
-        .dot:hover {
-            background-color: #F49D9A;
-        }
-    
-        .dotList {
-            display: flex;
-            justify-content: center;
-        }
-    
-        img {
-            border: none;
-            border-radius: 15px;
-            height: 500px;
-            width: 850px;
-            object-fit: cover;
-            position: relative;
-            z-index: 1;
-            margin: 190px 0 0 0;
-            box-shadow: 1px 3px 10px grey;
         }
     
         .top svg {
