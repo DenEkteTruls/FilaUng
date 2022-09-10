@@ -82,7 +82,6 @@
       position: relative;
       margin-top: 150px;
       margin-right: 50px;
-
       display: flex;
       justify-content: center;
       align-items: center;
